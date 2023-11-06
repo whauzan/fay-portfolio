@@ -20,7 +20,7 @@ const HeroSection = () => {
         </div>
       </div>
       <LinkScroll href="about-me">
-        <div className="absolute bottom-32 left-1/2 flex -translate-x-1/2 flex-col items-center justify-end text-base font-bold text-primary-dark">
+        <div className="absolute bottom-32 left-[48%] flex -translate-x-1/2 animate-bounce flex-col items-center justify-end text-base font-bold text-primary-dark">
           <p>scroll down</p>
           <svg
             width="24"
