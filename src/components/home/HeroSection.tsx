@@ -6,11 +6,11 @@ const HeroSection = () => {
   return (
     <section className="relative h-[calc(100vh-110px)]">
       <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-3/4 flex-col text-[13rem] uppercase leading-none text-primary-light/20">
-        <span className="my-[-2rem]">Portfolio</span>
-        <span className="my-[-2rem] rotate-180 scale-x-[-1]">Portfolio</span>
+        <span className="my-[-2.05rem]">Portfolio</span>
+        <span className="my-[-2.05rem] rotate-180 scale-x-[-1]">Portfolio</span>
       </div>
-      <div className="absolute left-1/2 top-1/2 w-7/12 -translate-x-1/2 translate-y-[-80%]  whitespace-nowrap font-catamaran text-8xl font-medium">
-        <h2>
+      <div className="absolute left-1/2 top-1/2 w-7/12 -translate-x-1/2 translate-y-[-90%]  whitespace-nowrap font-catamaran text-[4rem] font-medium leading-none">
+        <h2 className="flex items-center gap-x-8">
           <span className="text-[10rem] text-secondary">Hi </span>I&apos;m
           Aisyah, and
         </h2>
@@ -20,7 +20,7 @@ const HeroSection = () => {
         </div>
       </div>
       <LinkScroll href="about-me">
-        <div className="absolute bottom-32 left-1/2 flex -translate-x-1/2 flex-col items-center justify-end text-base font-bold text-primary-dark">
+        <div className="absolute bottom-32 left-[48%] flex -translate-x-1/2 animate-bounce flex-col items-center justify-end text-base font-bold text-primary-dark">
           <p>scroll down</p>
           <svg
             width="24"
