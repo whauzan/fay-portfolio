@@ -14,11 +14,11 @@ const TextLoop = ({ texts }: Props) => {
     setTimeout(() => {
       const next = index + 1;
       setIndex(next % texts.length);
-    }, 3 * 1000);
+    }, 2000);
   }, [index, setIndex, texts]);
 
   return (
-    <div className="relative inline w-fit overflow-hidden text-primary-dark">
+    <div className="relative inline w-fit overflow-hidden text-brand-red">
       <AnimatePresence initial={false}>
         <motion.span
           key={index}
@@ -31,7 +31,7 @@ const TextLoop = ({ texts }: Props) => {
             stiffness: 600,
             damping: 10,
           }}
-          style={{ position: "absolute" }}
+          style={{ position: "absolute", width: "33rem" }}
         >
           {texts[index]}
         </motion.span>

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter, Catamaran } from "next/font/google";
+import { Catamaran, Shrikhand } from "next/font/google";
 import "./globals.css";
 import React from "react";
 
-const inter = Inter({
+const shrikhand = Shrikhand({
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  variable: "--font-inter",
+  weight: ["400"],
+  variable: "--font-shrikhand",
 });
 
 const catamaran = Catamaran({
@@ -27,7 +27,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${catamaran.variable}`}>
+      <body className={`${shrikhand.variable} ${catamaran.variable}`}>
         {children}
       </body>
     </html>
