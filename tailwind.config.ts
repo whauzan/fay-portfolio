@@ -27,6 +27,15 @@ const config: Config = {
         shrikhand: ["var(--font-shrikhand)"],
         catamaran: ["var(--font-catamaran)"],
       },
+      keyframes: {
+        wiggle: {
+          "0%, 100%": { transform: "rotate(-7deg)" },
+          "50%": { transform: "rotate(7deg)" },
+        },
+      },
+      animation: {
+        wiggle: "wiggle 1.5s ease-in-out infinite",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography")],
