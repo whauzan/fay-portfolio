@@ -11,10 +11,13 @@ const TextLoop = ({ texts }: Props) => {
   const [index, setIndex] = useState<number>(0);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeoutId = setTimeout(() => {
       const next = index + 1;
       setIndex(next % texts.length);
     }, 2000);
+
+    // Clear the previous timeout on component unmount or before the next one is set
+    return () => clearTimeout(timeoutId);
   }, [index, setIndex, texts]);
 
   return (
