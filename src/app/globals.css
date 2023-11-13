@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: var(--font-catamaran), sans-serif;
   scroll-behavior: smooth;
+  color: "#060606";
 }

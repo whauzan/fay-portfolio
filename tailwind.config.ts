@@ -9,15 +9,22 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#FFF2EE",
-        primary: {
-          light: "#CE9494",
-          dark: "#AA6363",
+        neutral: {
+          white: "#FFF2EE",
+          grey: "#888888",
         },
-        secondary: "#A2D6DC",
+        brand: {
+          blue: "#78B8BF",
+          red: "#AA6363",
+          orange: "#FFDEB8",
+        },
+        text: {
+          black: "#060606",
+          white: "#FEFEFE",
+        },
       },
       fontFamily: {
-        inter: ["var(--font-inter)"],
+        shrikhand: ["var(--font-shrikhand)"],
         catamaran: ["var(--font-catamaran)"],
       },
     },
