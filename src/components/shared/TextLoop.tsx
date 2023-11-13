@@ -18,7 +18,7 @@ const TextLoop = ({ texts }: Props) => {
 
     // Clear the previous timeout on component unmount or before the next one is set
     return () => clearTimeout(timeoutId);
-  }, [index, setIndex, texts]);
+  }, [index, setIndex, texts.length]);
 
   return (
     <div className="relative inline w-fit overflow-hidden text-brand-red">

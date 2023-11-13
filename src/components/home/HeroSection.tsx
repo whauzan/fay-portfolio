@@ -6,12 +6,12 @@ import Icon from "../shared/Icon";
 
 const HeroSection = () => {
   return (
-    <section className="relative h-screen">
+    <section className="relative h-screen overflow-hidden">
       <Image
         src={"/bg-home-top.svg"}
         width={100}
         height={100}
-        className="absolute z-0 w-screen"
+        className="absolute z-0 h-full w-full object-cover object-bottom"
         alt="Background"
       />
       <div className="absolute z-10 flex h-full w-full flex-col px-40 pt-32 font-shrikhand text-[4rem] xl:px-56 2xl:px-96 2xl:pt-52">
