@@ -48,14 +48,18 @@ const ContactForm = () => {
             Name
           </Label>
           <Input id="name" className="py-6 text-lg" {...register("name")} />
-          {errors.name?.message && <p>{errors.name.message}</p>}
+          {errors.name?.message && (
+            <p className="text-red-500">{errors.name.message}</p>
+          )}
         </div>
         <div className="flex flex-col items-start gap-2">
           <Label htmlFor="email" className="text-xl font-medium">
             Email
           </Label>
           <Input id="email" className="py-6 text-lg" {...register("email")} />
-          {errors.email?.message && <p>{errors.email.message}</p>}
+          {errors.email?.message && (
+            <p className="text-red-500">{errors.email.message}</p>
+          )}
         </div>
         <div className="flex flex-col items-start gap-2">
           <Label htmlFor="message" className="text-xl font-medium">
@@ -67,7 +71,9 @@ const ContactForm = () => {
             rows={7}
             {...register("message")}
           />
-          {errors.message?.message && <p>{errors.message.message}</p>}
+          {errors.message?.message && (
+            <p className="text-red-500">{errors.message.message}</p>
+          )}
         </div>
       </div>
       <DialogFooter className="sm:justify-center">
