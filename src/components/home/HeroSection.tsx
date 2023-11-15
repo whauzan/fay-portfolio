@@ -15,13 +15,16 @@ const HeroSection = () => {
         alt="Background"
       />
       <div className="absolute z-10 flex h-full w-full flex-col px-40 pt-32 font-shrikhand text-[4rem] xl:px-56 2xl:px-96 2xl:pt-52">
-        <h2 className="relative gap-x-8">
-          <Icon
-            name="star"
-            className="absolute right-16 top-10 -rotate-12 text-brand-blue xl:right-48 2xl:right-64"
-          />
+        <h2 className=" gap-x-8">
           <span className="text-[10rem] text-brand-blue">Hi </span>I&apos;m
-          Aisyah, and
+          Aisyah,{" "}
+          <span className="relative">
+            and
+            <Icon
+              name="star"
+              className="absolute -right-20 -top-16 -rotate-12 text-brand-blue"
+            />
+          </span>
         </h2>
         <div className="relative ml-72 xl:ml-96">
           <span className="mr-6">I do</span>
@@ -31,10 +34,10 @@ const HeroSection = () => {
           />
           <TextLoop texts={["graphic design", "UI/UX design", "game & art"]} />
         </div>
-        <div className="mt-36 animate-bounce text-center font-catamaran text-base font-bold text-brand-red xl:mt-60">
+        <div className="mx-auto mt-72 w-fit animate-bounce font-catamaran text-base font-bold text-brand-red xl:mt-48 2xl:mt-60">
           <LinkScroll href="about-me">
             <p>Scroll down</p>
-            <Icon name="downs" className="flex w-full justify-center" />
+            <Icon name="downs" className="flex justify-center" />
           </LinkScroll>
         </div>
       </div>

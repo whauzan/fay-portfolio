@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Catamaran, Shrikhand } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import Providers from "./providers";
 
 const shrikhand = Shrikhand({
   subsets: ["latin"],
@@ -28,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${shrikhand.variable} ${catamaran.variable}`}>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

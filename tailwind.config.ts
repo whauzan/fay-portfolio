@@ -28,13 +28,18 @@ const config: Config = {
         catamaran: ["var(--font-catamaran)"],
       },
       keyframes: {
-        wiggle: {
+        wiggleLeft: {
           "0%, 100%": { transform: "rotate(-7deg)" },
           "50%": { transform: "rotate(7deg)" },
         },
+        wiggleRight: {
+          "0%, 100%": { transform: "rotate(10deg)" },
+          "50%": { transform: "rotate(-10deg)" },
+        },
       },
       animation: {
-        wiggle: "wiggle 1.5s ease-in-out infinite",
+        wiggleLeft: "wiggleLeft 1.5s ease-in-out infinite",
+        wiggleRight: "wiggleRight 1.5s ease-in-out infinite",
       },
     },
   },
